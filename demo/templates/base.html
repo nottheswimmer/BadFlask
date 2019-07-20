@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+</head>
+<body>
+<p>Welcome, {{ name }}!</p>
+
+<p>Let's count!</p>
+<ul>
+{% for x in range(10) %}
+    <li>{{ x }} AH HAH HAH</li>
+{% endfor %}
+</ul>
+
+{% spaceless %}
+
+
+<p>We also have spaceless tags, for your OCD!</p>
+
+
+{% endspaceless %}
+</body>
+</html>
