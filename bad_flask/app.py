@@ -4,7 +4,7 @@ from http import HTTPStatus
 from urllib.parse import parse_qs
 from . import template
 
-HTTP_STATUSES = {s.value: f'{s.value} {s.description}' for s in HTTPStatus}
+HTTP_STATUSES = {s.value: f'{s.value} {s.phrase}' for s in HTTPStatus}
 
 
 class WSGIRequest:
