@@ -18,6 +18,7 @@ def say_my_name(request):
     else:
         return 400, 'You did not tell me your name!'
 
+
 @app.route(r'/templated$')
 def templated(request):
     name = request.query.get('name', 'stranger')
